@@ -85,7 +85,7 @@ bool HelloWorld::init()
 void HelloWorld::menuCloseCallback(Ref* pSender)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
-    //WeiXinShare::sendToFriend();
-    WeiXinShare::sendToTimeLine();
+    WeiXinShare::sendToFriend();
+    //WeiXinShare::sendToTimeLine();
 #endif
 }

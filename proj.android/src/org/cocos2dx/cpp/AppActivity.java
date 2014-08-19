@@ -42,7 +42,7 @@ import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
 public class AppActivity extends Cocos2dxActivity {
 	
-	private static final String APP_ID = "wx5ae65380cf0ed26f";
+	private static final String APP_ID = "wx81115d2aa55710fa";
 	
 	private static IWXAPI api;
 	
@@ -68,7 +68,7 @@ public class AppActivity extends Cocos2dxActivity {
     	if(api.openWXApp())
     	{
     		WXWebpageObject webpage = new WXWebpageObject();
-            webpage.webpageUrl = "http://www.baidu.com";
+            webpage.webpageUrl = "http://www.fusijie.com";
             WXMediaMessage msg = new WXMediaMessage(webpage);
             msg.title = "Tittle";
             msg.description = "Description";

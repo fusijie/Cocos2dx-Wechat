@@ -8,8 +8,8 @@
 ###2.环境
 
 * OS: Mac OSX
-* IDE: Xcode v5.11 and Eclipse
-* Android SDK:4.0 
+* IDE: Xcode v5.11 and Eclipse ADT v22.3
+* Android SDK:4.3 
 * Adnroid NDK:r9d
 * Cocos2d-x 3.2release
 
@@ -77,7 +77,7 @@
 
 （4）在AppActivity中添加成员变量
 
-	private static final String APP_ID = "wx1234567890";//AppID，从第四步获取
+	private static final String APP_ID = "wx81115d2aa55710fa";//AppID，从第四步获取
 	private static IWXAPI api;//微信API接口
 	private static AppActivity instance;//类静态实例，为了方便后面静态函数的调用
 
@@ -230,11 +230,18 @@
 
 ###6.效果
 
+分享给好友，点击即可跳转链接：
+
+![](images/5.png)
+
+分享到朋友圈，点击即可跳转链接：
+
+![](images/6.png)
 ###7.总结
 
 本文写的比较详细，但是也忽略了比如如何接收微信的请求及返回值的说明以及如何进行混淆等等，算是一个初级教程吧。主要是面向对jni调用，第三方安卓sdk集成不太了解的朋友。这里虽然只是针对微信sdk的部分功能集成进行说明，但是道理都是共通的，如何集成微博分享，如何集成第三方广告等等，用类似的方法都可以实现。
 
-本demo的下载地址：[我的Github]()
+本demo的[下载地址](https://github.com/fusijie/Cocos2dx-Wechat)。
 
 
 
