@@ -178,7 +178,7 @@
  	#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //判断当前是否为Android平台
     JniMethodInfo minfo;
     
-    bool isHave = JniHelper::getStaticMethodInfo(minfo,"com/fusijie/umengdemo/WeChatDemo","sendMsgToFriend", "()V");
+    bool isHave = JniHelper::getStaticMethodInfo(minfo,"org/cocos2dx/cpp/AppActivity","sendMsgToFriend", "()V");
     
     if (!isHave) {
         log("jni:sendMsgToFriend is null");
@@ -194,7 +194,7 @@
 	#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID) //判断当前是否为Android平台
     JniMethodInfo minfo;
     
-    bool isHave = JniHelper::getStaticMethodInfo(minfo,"com/fusijie/umengdemo/WeChatDemo","sendMsgToTimeLine", "()V");
+    bool isHave = JniHelper::getStaticMethodInfo(minfo,"org/cocos2dx/cpp/AppActivity","sendMsgToTimeLine", "()V");
     
     if (!isHave) {
         log("jni:sendMsgToTimeLine is null");
